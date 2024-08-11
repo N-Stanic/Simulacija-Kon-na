@@ -1,3 +1,5 @@
-# Simulacija-Kon-na
+# Simulacija-Koncna
 
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/N-Stanic/Simulacija-Kon-na)
+Simulacija je bila izdelana za magistrsko nalogo.
+Uporaba simulacije dovoljena za izobraževalne namene.
+Za dodatna vprašanja kontaktirajte na: nino.stanic.1999@gmail.com
