@@ -1,0 +1,169 @@
+#app {
+  margin-left: 230px;
+  top: 0px;
+  border: 2px solid gray;
+  background-color: bisque;
+  width: 150vh;
+  height: 90vh;
+  display: flex;
+}
+
+.draggable.dragging {
+  opacity: 0.5;
+}
+
+#start {
+  border: 1px solid black;
+  background-color: lightgrey;
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#iron {
+  background-color: grey;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border: 1px solid black;
+  cursor: move;
+}
+
+#gold {
+  background-color: gold;
+  width: 36px;
+  height: 36px;
+  margin: 10px;
+  border: 1px solid black;
+  cursor: move;
+}
+
+#steel {
+  background-color: steelblue;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border: 1px solid black;
+  cursor: move;
+}
+
+#water {
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border: 1px solid black;
+  cursor: move;
+}
+
+#aluminum {
+  background-color: aliceblue;
+  width: 72px;
+  height: 72px;
+  margin: 10px;
+  border: 1px solid black;
+  cursor: move;
+}
+
+#copper {
+  background-color: brown;
+  width: 48px;
+  height: 48px;
+  margin: 10px;
+  border: 1px solid black;
+  cursor: move;
+}
+
+#ethanol {
+  background-color: white;
+  width: 108px;
+  height: 108px;
+  margin: 10px;
+  border: 1px solid black;
+  cursor: move;
+}
+
+#hot {
+  background-color: coral;
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#cold {
+  background-color: lightblue;
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#sidebar {
+  border: 2px solid gray;
+  margin-left: 5px;
+  padding-left: 5px;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 220px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #ffb366;
+  overflow-x: auto; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+}
+
+.sliderh {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 80%;
+  background-image: linear-gradient(to right, darkred, gold, yellow, white);
+}
+
+.sliderc {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 80%;
+  background-image: linear-gradient(to right, darkred, purple, blue, darkblue);
+}
+
+.inputc {
+  width: 40%;
+}
+
+.inputh {
+  width: 40%;
+}
+
+.slidert {
+  width: 80%;
+}
+
+#primeri {
+  margin-top: 40px;
+}
+
+.stanjemateriala {
+  position: absolute;
+  visibility: hidden;
+  font-weight: bold;
+}

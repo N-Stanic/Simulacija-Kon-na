@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulacija</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="sidebar">
+      <h><b>Simulacija</b></h>
+      <button type="button" id="navodila">Navodila</button>
+      <br />
+      <button type="button" id="Korak">Časovni korak</button>
+      <p id="casvklop" style="color: darkred"><b>Čas trenutno ne teče</b></p>
+      <button type="button" id="Zacni">Zaženi čas</button>
+      <button type="button" id="Ustavi">Ustavi čas</button>
+
+      <p>Segrevanje materialov (1 kg)</p>
+      <p>Ime materiala: <span id="ListName"></span></p>
+
+      <p>Temperatura (°C): <span id="ListTemp"></span></p>
+
+      <p>Temperatura (K): <span id="ListTempK"></span></p>
+
+      <p>Energija (J): <span id="ListE"></span></p>
+
+      <p>Kapaciteta (J/K): <span id="ListC"></span></p>
+
+      <p>Vrelišče (°C): <span id="ListVrelisce"></span></p>
+
+      <p>Tališče (°C): <span id="ListTalisce"></span></p>
+
+      <p id="Stanje"></p>
+      <span class="stanjemateriala" id="stanjevrelo" style="color: red;">
+        Material vre!
+      </span>
+      <span class="stanjemateriala" id="stanjetekoce" style="color: #800080;">
+        Material je tekoči.
+      </span>
+      <span class="stanjemateriala" id="stanjetrdno" style="color: blue;">
+        Material je trden.
+      </span>
+      <span class="stanjemateriala" id="absolutnanicla" style="color: black">
+        Material je dosegel <br> absolutno ničlo!
+      </span>
+      <button type="button" id="primeri">Primeri</button>
+      <button type="button" id="grafikaspremeni">Spremeni grafiko</button>
+      <br />
+      <p id="vklopgrelec" style="color: darkred"><b>Grelec izklopljen</b></p>
+      <button type="button" id="HotOn">Vklop grelca</button>
+      <button type="button" id="HotOff">Izklop grelca</button>
+      <div class="slider">
+        Moč grelca (W)
+        <input
+          type="number"
+          value="500"
+          name="area"
+          class="inputh"
+          id="heatinginput"
+        />
+        <input
+          type="range"
+          min="0"
+          max="1000"
+          value="500"
+          class="sliderh"
+          id="heating"
+        />
+      </div>
+      <br />
+      <p id="vklophladilec" style="color: darkred">
+        <b>Hladilec izklopljen</b>
+      </p>
+      <button type="button" id="ColdOn">Vklop hladilca</button>
+      <button type="button" id="ColdOff">Izklop hladilca</button>
+      <div class="slider">
+        Moč hladilca (W)
+        <input
+          type="number"
+          value="500"
+          name="area"
+          class="inputc"
+          id="coolinginput"
+        />
+        <input
+          type="range"
+          min="0"
+          max="1000"
+          value="500"
+          class="sliderc"
+          id="cooling"
+        />
+
+        <!--  <button type="button" id="Isolation">Vklop izolacija</button>
+      <button type="button" id="IsolationOff">Izklop izolacija</button> -->
+      </div>
+    </div>
+    <div id="app">
+      <div id="start" class="container">
+        <div id="ethanol" class="draggable center" draggable="true">
+          <img
+            src="ethanol.png"
+            width="100%"
+            class="graphic"
+            style="pointer-events: none; visibility: visible"
+          />
+        </div>
+        <div id="water" class="draggable" draggable="true">
+          <img
+            src="water.webp"
+            width="100%"
+            class="graphic"
+            style="pointer-events: none; visibility: visible"
+          />
+        </div>
+        <div id="aluminum" class="draggable" draggable="true">
+          <img
+            src="aluminium.png"
+            width="100%"
+            class="graphic"
+            style="pointer-events: none; visibility: visible"
+          />
+        </div>
+        <div id="steel" class="draggable" draggable="true">
+          <img
+            src="steel.webp"
+            width="100%"
+            class="graphic"
+            style="pointer-events: none; visibility: visible"
+          />
+        </div>
+        <div id="iron" class="draggable" draggable="true">
+          <img
+            src="iron.webp"
+            width="100%"
+            class="graphic"
+            style="pointer-events: none; visibility: visible"
+          />
+        </div>
+        <div id="copper" class="draggable" draggable="true">
+          <img
+            src="copper.webp"
+            width="100%"
+            class="graphic"
+            style="pointer-events: none; visibility: visible"
+          />
+        </div>
+        <div id="gold" class="draggable" draggable="true">
+          <img
+            src="gold.webp"
+            width="100%"
+            class="graphic"
+            style="pointer-events: none; visibility: visible"
+          />
+        </div>
+      </div>
+      <div id="hot" class="container"></div>
+      <div id="cold" class="container"></div>
+    </div>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
